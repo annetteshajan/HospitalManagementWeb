@@ -1,0 +1,27 @@
+{%extends "base.html"%}
+{%block body%}
+<div class="form">  
+    <div class="container" style="width: min-content">
+        <br>
+    <h2 style="text-align:center", style="font-family: sans-serif">Enter Bill details</h2>
+    <br>
+    <br>
+    <form action="/room" method="POST">
+        <h6 style="text-align:left" >Patient ID</h6>
+        <center><input type="text" name="pat_id" id="pat_id" required></center>
+        <h6 style="text-align:left" >Doctor ID</h6>
+        <center><input type="text" name="doc_id" id="doc_id" required></center>
+        <h6 style="text-align:left" >Room number</h6>
+        <center><input type="text" name="roomno" id="roomno" required></center>
+        <h6 style="text-align:left" >Admit Date</h6>
+       <center><input type="date" name="admit" id ="admit"></center><br>
+       <h6 style="text-align:left" >Discharge Date</h6>
+       <center><input type="date" name="disch" id ="disch"></center><br>
+              
+       <center><input type="submit" value="Add Room" style="background-position: center" ></center> 
+       <br>
+       <br>
+    </form>
+    </div>
+</div>
+{%endblock%}

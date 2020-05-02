@@ -1,0 +1,56 @@
+{%extends "base.html"%}
+{%block body%}
+{%for item in val%}
+
+<h1 style="text-align: center" style="font-family: sans-serif">Welcome {{item[1]}} {{item[2]}}!<span class="tab"><span class="tab"><p class="button-custom order-lg-last mb-0"><a href="\" class="btn btn-secondary py-2 px-3">LOGOUT</a></p></span></span></h1>
+{%endfor%}
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center mb-4 pb-2">
+      <div class="col-md-8 text-center heading-section ftco-animate">
+          <span class="subheading">Doctor Privileges</span>
+      </div>
+    </div>
+        <div class="ftco-departments">
+                <div class="row">
+        
+          <div class="col-md-12 tab-wrap">
+            
+            <div class="tab-content bg-light p-4 p-md-4 ftco-animate" id="v-pills-tabContent">
+
+            <div class="tab-pane py-2 fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
+                  <div class="row departments">
+                      <div class="col-lg-4 order-lg-last d-flex align-items-stretch">
+                          <div class="img d-flex align-self-stretch" style="background-image: url(../static/images/image_3.jpg);"></div>
+                      </div>
+                      <div class="col-lg-8">
+                          <h2><a href="/viewappt">View Appointments</a></h2>
+                                                                 
+                      </div>
+                  </div>
+                </div>
+                </div>
+          </div>
+          <div class="col-md-12 tab-wrap">    
+            <div class="tab-content bg-light p-4 p-md-4 ftco-animate" id="v-pills-tabContent">
+        
+                <div class="tab-pane py-2 fade show active" id="v-pills-2" role="tabpanel" aria-labelledby="day-2-tab">
+                    <div class="row departments">
+                        <div class="col-lg-4 order-lg-last d-flex align-items-stretch">
+                            <div class="img d-flex align-self-stretch" style="background-image: url(../static/images/image_2.jpg);"></div>
+                        </div>
+                        <div class="col-lg-8">
+                            <h2><a href="/resetpwd">Reset password</a></h2>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+                        
+    </section>
+{% endblock %}

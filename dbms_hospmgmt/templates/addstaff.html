@@ -1,0 +1,39 @@
+{%extends "base.html"%}
+{%block body%}
+<div class="form">  
+    <div class="container" style="width: min-content">
+        <br>
+    <h2 style="text-align:center", style="font-family: sans-serif">Enter Staff details</h2>
+    <br>
+    <br>
+    <form action="/addstaff" method="POST">
+        <h6 style="text-align:left" >Username</h6>
+        <center><input type="text" name="uname" id="uname" required value={{item[7]}}></center>
+        <h6 style="text-align:left" >Password</h6>
+        <center><input type="password" name="password" id="password" required value={{item[8]}}></center>
+        <h6 style="text-align:left" >Name</h6>
+        <center><input type="text" name="FN" id="FN" placeholder="First" required value={{item[1]}}></center>
+       <br>
+       <center><input type="text" name="LN" id="LN" placeholder="Last" value={{item[2]}}></center>
+       Email:
+       <center><input type="text" name="email" id ="email" placeholder="name@email.com" required value={{item[6]}}></center><br>
+       Department:
+       <center><select name="dep" value={{item[3]}}></center>
+            <option value='D01'>General Medicine</option>
+            <option VALUE='D02'>Surgery</option>
+            <option value='D03'>Dental</option>
+            <option value='D04'>Orthopaedics</option>
+            <option value='D05'>Cardiology</option>
+       </select>
+       <br>
+       
+        <h6 style="text-align:left" >Phone Number</h6>
+        <center><input type="text" name="Phone" id="Phone" value={{item[4]}}></center>
+        
+       <center><input type="submit" value="Add Staff" style="background-position: center" ></center> 
+       <br>
+       <br>
+    </form>
+    </div>
+</div>
+{%endblock%}

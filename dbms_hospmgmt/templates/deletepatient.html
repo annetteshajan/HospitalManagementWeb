@@ -1,0 +1,26 @@
+{%extends "base.html"%}
+{%block body%}
+        <form action="/deletepatient" method="POST">
+            <div class="login">
+                <div class="login-screen">
+                    <div class="app-title">
+                        <h1>Toggle Patient Dormancy</h1>
+                    </div>
+                    <div class="login-form">
+                        <div class="control-group">
+                            <h3 style="text-align: center">Enter Patient ID</h3>
+                            <input type="text" class="login-field" value="" placeholder="patient id" name="patient_id" >
+                            <label class="login-field-icon fui-user" for="login-name"></label>
+                        </div>
+                        <div class="control-group">
+                                                      
+                    
+                            <input type="submit" value="Toggle" class="btn btn-primary btn-large btn-block">
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+{%endblock%}

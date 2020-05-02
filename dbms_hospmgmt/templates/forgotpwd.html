@@ -1,0 +1,23 @@
+{%extends "base.html"%}
+{%block body%}
+        <form action="/send_mail" method="POST">
+            <div class="login">
+                <div class="login-screen">
+                    <div class="app-title">
+                        <h1>Forgot Password</h1>
+                    </div>
+                    <div class="login-form">
+                        <div class="control-group">
+                            <h6><center>Enter your registered email id</center></h6><br>
+                            <center><input type="text" class="login-field" placeholder="email" name="email" id="email" ></center>
+                        </div>
+                        <div class="control-group">        
+                            <br>              
+                            <center><input type="submit" value="Submit" class="btn btn-primary btn-large btn-block"></center>
+                            <h7><center>We will send the reset password link to your email!</center></h7>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+{%endblock%}

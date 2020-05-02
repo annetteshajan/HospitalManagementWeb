@@ -1,0 +1,113 @@
+{%extends "base.html"%}
+{%block body%}
+{%for item in val%}
+
+<h1 style="text-align: center" style="font-family: sans-serif">Welcome {{item[1]}} {{item[2]}}!<span class="tab"><span class="tab"><p class="button-custom order-lg-last mb-0"><a href="\" class="btn btn-secondary py-2 px-3">LOGOUT</a></p></span></span></h1>
+{%endfor%}
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center mb-4 pb-2">
+      <div class="col-md-8 text-center heading-section ftco-animate">
+          <span class="subheading">Admin Privileges</span>
+      </div>
+    </div>
+        <div class="ftco-departments">
+                <div class="row">
+        
+          <div class="col-md-12 tab-wrap">
+            
+            <div class="tab-content bg-light p-4 p-md-4 ftco-animate" id="v-pills-tabContent">
+
+            <div class="tab-pane py-2 fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
+                  <div class="row departments">
+                      <div class="col-lg-4 order-lg-last d-flex align-items-stretch">
+                          <div class="img d-flex align-self-stretch" style="background-image: url(../static/images/image_3.jpg);"></div>
+                      </div>
+                      <div class="col-lg-8">
+                          <h2>Patient</h2>
+                                        <div class="list-unstyled">
+                                            <h3>Operations</h3>
+                                            <ul>
+                                                <li> <a href="/patient">Add Patient</a></li>
+                                                <li> <a href="/upatient">Update Patient</a></li>
+                                                <li> <a href="dpatient">Toggle Patient Dormancy</a></li>
+                                            </ul>
+                                        </div>
+                      </div>
+                  </div>
+                </div>
+                </div>
+          </div>
+
+        <div class="col-md-12 tab-wrap">    
+            <div class="tab-content bg-light p-4 p-md-4 ftco-animate" id="v-pills-tabContent">
+        
+                <div class="tab-pane py-2 fade show active" id="v-pills-2" role="tabpanel" aria-labelledby="day-2-tab">
+                    <div class="row departments">
+                        <div class="col-lg-4 order-lg-last d-flex align-items-stretch">
+                            <div class="img d-flex align-self-stretch" style="background-image: url(../static/images/image_2.jpg);"></div>
+                        </div>
+                        <div class="col-lg-8">
+                            <h2>Doctor</h2>
+                            <div class="list-unstyled">
+                                <h3>Operations</h3>
+                                <ul>
+                                <li> <a href="/doctor">Add Doctor</a></li>
+                                <li> <a href="/udoctor">Update Doctor</a></li>
+                                <li> <a href="/ddoctor">Toggle Doctor Dormancy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 tab-wrap">    
+            <div class="tab-content bg-light p-4 p-md-4 ftco-animate" id="v-pills-tabContent">
+        
+                <div class="tab-pane py-2 fade show active" id="v-pills-2" role="tabpanel" aria-labelledby="day-2-tab">
+                    <div class="row departments">
+                        <div class="col-lg-4 order-lg-last d-flex align-items-stretch">
+                            <div class="img d-flex align-self-stretch" style="background-image: url(../static/images/image_5.jpg);"></div>
+                        </div>
+                        <div class="col-lg-8">
+                            <h2> Hospital Staff</h2>
+                            <div class="list-unstyled">
+                                <h3>Operations</h3>
+                                <ul>
+                                <li> <a href="/staff">Add staff</a></li>
+                                <li> <a href="/ustaff">Update staff</a></li>
+                                <li> <a href="/dstaff">Toggle staff dormancy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 tab-wrap">    
+            <div class="tab-content bg-light p-4 p-md-4 ftco-animate" id="v-pills-tabContent">
+        
+                <div class="tab-pane py-2 fade show active" id="v-pills-2" role="tabpanel" aria-labelledby="day-2-tab">
+                    <div class="row departments">
+                        <div class="col-lg-4 order-lg-last d-flex align-items-stretch">
+                            <div class="img d-flex align-self-stretch" style="background-image: url(../static/images/image_6.jpg);"></div>
+                        </div>
+                        <div class="col-lg-8">
+                            <h2>Admins</h2>
+                            <div class="list-unstyled">
+                                <h3>Operations</h3>
+                                <ul>
+                                <li> <a href="/admin">Add Admin</a></li>
+                                <li> <a href="/uadmin">Update Admin</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+                
+    </section>
+{% endblock %}

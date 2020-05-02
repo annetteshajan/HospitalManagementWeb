@@ -1,0 +1,69 @@
+{%extends "base.html"%}
+{%block body%}
+{%for i in val%}
+<h1 style="text-align: center" style="font-family: sans-serif">Welcome {{i[1]}} {{i[2]}}!</h1>
+{%endfor%}
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center mb-4 pb-2">
+      <div class="col-md-8 text-center heading-section ftco-animate">
+          <span class="subheading">Patient History</span>
+      </div>
+    </div>
+        <div class="ftco-departments">
+                <div class="row">
+        
+          <div class="col-md-12 tab-wrap">
+            
+            <div class="tab-content bg-light p-4 p-md-4 ftco-animate" id="v-pills-tabContent">
+
+            <div class="tab-pane py-2 fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
+                  <div class="row departments">
+                      <div class="col-lg-4 order-lg-last d-flex align-items-stretch">
+                          <div class="img d-flex align-self-stretch" style="background-image: url(../static/images/image_3.jpg);"></div>
+                      </div>
+                      <div class="col-lg-8">
+                                        <div class="list-unstyled">
+                                            <ul>
+                                                <li> Attending Doctor:{{item[0]}}-{{item[1]}}{{item[2]}}</li>
+                                                <li>Record Details:{{rec[0]}}
+                                                    <br>Date:{{rec[2]}}
+                                                    <br>Symptoms:{{rec[3]}}
+                                                    <br>Diagnosis:{{rec[4]}}
+                                                    <br>Prescription:{{rec[5]}}
+                                                </li>
+                                                <li>Room Details:
+                                                    <br>Room No:{{room[0]}}
+                                                    <br>Admit Date:{{room[2]}}
+                                                    <br>Discharge Date:{{room[3]}}
+                                                </li>
+                                                <li>Bill Details:
+                                                    <br>Bill ID:{{bill[0]}}
+                                                    <br>Consultation Fee:{{bill[3]}}
+                                                    <br>Extra Fee:{{bill[4]}}
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <form action="/rating" method="POST">
+                                            <div class="login">
+                                        <div class="login-form">
+                                                <div class="control-group">
+                                                    <h3 style="text-align: center">Rate Dr {{item[1]}} {{item[2]}} out of 10</h3>
+                                                    <input type="text" class="login-field" id="rating" placeholder="enter number" name="rating"  >
+                                                    <label class="login-field-icon fui-user" for="login-name"></label>
+                                                </div>
+                                                <div class="control-group">                                            
+                                                    <input type="submit" value="Submit" class="btn btn-primary btn-large btn-block">
+                                                    <br>                        
+                                                </div>
+                                            </div>
+                                        </form>
+                      </div>
+                  </div>
+                </div>
+                </div>
+          </div>
+</div></div></div>
+    </section>
+{% endblock %}

@@ -1,0 +1,26 @@
+{%extends "base.html"%}
+{%block body%}
+        <form action="/deletestaff" method="POST">
+            <div class="login">
+                <div class="login-screen">
+                    <div class="app-title">
+                        <h1>Toggle Staff Dormancy</h1>
+                    </div>
+                    <div class="login-form">
+                        <div class="control-group">
+                            <h3 style="text-align: center">Enter Staff ID</h3>
+                            <input type="text" class="login-field" value="" placeholder="staff id" name="staff_id" >
+                            <label class="login-field-icon fui-user" for="login-name"></label>
+                        </div>
+                        <div class="control-group">
+                                                      
+                    
+                            <input type="submit" value="Toggle" class="btn btn-primary btn-large btn-block">
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+{%endblock%}

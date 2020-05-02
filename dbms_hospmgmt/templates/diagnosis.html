@@ -1,0 +1,28 @@
+{%extends "base.html"%}
+{%block body%}
+<div class="form">  
+    <div class="container" style="width: min-content">
+        <br>
+    <h2 style="text-align:center", style="font-family: sans-serif">Enter Diagnosis details for {{item}}</h2>
+    <br>
+    <br>
+    <form action="/updatemedrecord" method="POST">
+        <h6 style="text-align:left" >Patient ID</h6>
+        <center><input type="text" name="pat_id" id="pat_id" value="{{item}}" required></center>
+        <h6 style="text-align:left" >Consultation Date</h6>
+        <center><input type="date" name="date" id="date" required></center>
+        <h6 style="text-align:left" >Symptoms</h6>
+        <center><input type="text" name="symptoms" id="symptoms" required></center>
+        <h6 style="text-align:left" >Diagnosis</h6>
+        <center><input type="text" name="diagnosis" id="diagnosis" placeholder="instructions for patient" ></center>
+       <h6 style="text-align:left" >Prescription</h6>
+       <center><input type="text" name="presc" id ="presc" placeholder="list of medication"></center><br>
+       
+        
+       <center><input type="submit" value="Submit" style="background-position: center" ></center> 
+       <br>
+       <br>
+    </form>
+    </div>
+</div>
+{%endblock%}

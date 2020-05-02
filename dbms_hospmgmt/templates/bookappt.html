@@ -1,0 +1,32 @@
+{%extends "base.html"%}
+{%block body%}
+        <form action="/bookappt2"  method="POST">
+            <div class="login">
+                <div class="login-screen">
+                    <div class="app-title">
+                        <h1>Book Appointment</h1>
+                    </div>
+                    <div class="login-form">
+                        <div class="control-group">
+                            <h3 style="text-align: center">Choose department</h3>
+                            <center><select name="dep" id="dep"></center>
+                                <option value='D01'>General Medicine</option>
+                                <option VALUE='D02'>Surgery</option>
+                                <option value='D03'>Dental</option>
+                                <option value='D04'>Orthopaedics</option>
+                                <option value='D05'>Cardiology</option>
+                           </select>
+                        </div>
+                        <div class="control-group">
+                                                      
+                    
+                            <input type="submit" value="Submit"  class="btn btn-primary btn-large btn-block">
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+{%endblock%}

@@ -1,0 +1,372 @@
+{%extends "base.html"%}
+
+{%block body%}
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container d-flex align-items-center">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      <p class="button-custom order-lg-last mb-0"><a href="\login" class="btn btn-secondary py-2 px-3">LOGIN</a></p>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav mr-auto">
+	        	<li class="nav-item active"><a href="/" class="nav-link pl-0">Home</a></li>
+	        	<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+	        	<!-- <li class="nav-item"><a href="doctor.html" class="nav-link">Doctor</a></li> -->
+	        	<li class="nav-item"><a href="#dept" class="nav-link">Departments</a></li>
+	        	<!-- <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li> -->
+	        	<!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
+	          <li class="nav-item"><a href="#test" class="nav-link">Testimonials</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    <section class="home-slider owl-carousel">
+      <div class="slider-item" style="background-image:url(../static/images/bg_1.jpg);" data-stellar-background-ratio="0.5">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
+          <div class="col-md-6 text ftco-animate">
+            <h1 class="mb-4"><span>Your Health <br>Is Important To Us</span></h1>
+            <h3 class="subheading">Everyday We Bring Hope to the Patient We Serve</h3>
+            <!-- <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">View our works</a></p> -->
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="slider-item" style="background-image:url(../static/images/hosp.jpg);">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
+          <div class="col-md-6 text ftco-animate">
+            <h1 class="mb-4"><span>We Cater <br>To Your Needs</span></h1>
+            <h3 class="subheading">Your Health is Our Top Priority with <br>Affordable medical facilities</h3>
+            <!-- <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">View our works</a></p> -->
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-services ftco-no-pb">
+			<div class="container">
+				<div class="row no-gutters">
+          <div class="col-md-3 d-flex services align-self-stretch p-4 ftco-animate">
+            <div class="media block-6 d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<span class="flaticon-doctor"></span>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Qualified Doctors</h3>
+                <p>We have the most experienced and knowledgable team of doctors </p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex services align-self-stretch p-4 ftco-animate">
+            <div class="media block-6 d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<span class="flaticon-ambulance"></span>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Emergency Care</h3>
+                <p>We will be at your beck and call in case of emergencies</p>
+              </div>
+            </div>    
+          </div>
+          <div class="col-md-3 d-flex services align-self-stretch p-4 ftco-animate">
+            <div class="media block-6 d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<span class="flaticon-stethoscope"></span>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Affordable Facilities</h3>
+                <p>All our services are affordable and reasonable for all patients</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex services align-self-stretch p-4 ftco-animate">
+            <div class="media block-6 d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<span class="flaticon-24-hours"></span>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">24 Hours Service</h3>
+                <p>We have the best staff at your service at any hour of the day</p>
+              </div>
+            </div>      
+          </div>
+        </div>
+			</div>
+		</section>
+
+		<p id="about">
+		<section class="ftco-section ftco-no-pt ftc-no-pb">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url(../static/images/about.jpg);">
+					</div>
+					<div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
+	          <div class="heading-section mb-5">
+	          	<div class="pl-md-5 ml-md-5">
+		          	<span class="subheading">About AA Healthcare</span>
+		            <h2 class="mb-4" style="font-size: 28px;">Medical specialty concerned with the care of acutely ill hospitalized patients</h2>
+							</div>
+	          </div>
+	          <div class="pl-md-5 ml-md-5 mb-5">
+							<div class="row mt-5 pt-2">
+								<div class="col-lg-6">
+									<div class="services-2 d-flex">
+										<div class="icon mt-2 mr-3 d-f+lex justify-content-center align-items-center"><span class="flaticon-first-aid-kit"></span></div>
+										<div class="text">
+											<h3>Primary Care</h3>
+											<p>We have a wide variety of departments which can take care of your illness</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="services-2 d-flex">
+										<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-dropper"></span></div>
+										<div class="text">
+											<h3>Lab Test</h3>
+											<p>We are equipped with the latest technologies and provide accurate lab tests</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="services-2 d-flex">
+											<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-heart-rate"></span></div>
+										<div class="text">
+											<h3>Preventive care</h3>
+											<p>Our highly qualified staff can help you in preventing illness and dealing with symptoms of any disease.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="services-2 d-flex">
+											<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-experiment-results"></span></div>
+										<div class="text">
+											<h3>Feedback</h3>
+											<p>We take your opinions into consideration by filtering out doctors according to the rating given by you.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		</p>
+
+		<p id="dept">
+    <section class="ftco-section">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+          	<span class="subheading">Departments</span>
+            <h2 class="mb-4">Clinic Departments</h2>
+          </div>
+        </div>
+    		<div class="ftco-departments">
+					<div class="row">
+            <div class="col-md-12 nav-link-wrap">
+	            <div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+	              <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">General</a>
+
+	              <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Surgery</a>
+
+	              <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Dental</a>
+
+	              <a class="nav-link ftco-animate" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">Orthopaedics</a>
+
+	              <a class="nav-link ftco-animate" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab" aria-controls="v-pills-5" aria-selected="false">Cardiology</a>
+
+	            </div>
+	          </div>
+	          <div class="col-md-12 tab-wrap">
+	            
+	            <div class="tab-content bg-light p-4 p-md-5 ftco-animate" id="v-pills-tabContent">
+
+                <p id="medi">
+                <div class="tab-pane py-2 fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
+	              	<div class="row departments">
+	              		<div class="col-lg-4 order-lg-last d-flex align-items-stretch">
+	              			<div class="img d-flex align-self-stretch" style="background-image: url(../static/images/dept-1.jpg);"></div>
+	              		</div>
+	              		<div class="col-lg-8">
+	              			<h2>General Medicine</h2>
+	              			<p>The Department of General Medicine deals with the prevention, diagnosis and non-surgical treatment of various diseases. It serves as the first point of contact whenever a patient visits the hospital. A general physician conducts a physical examination of the patient and then recommends necessary tests and diagnostic procedures. The results of these tests, the general physical examination and symptoms are then correlated to arrive at a final diagnosis. Depending on the final diagnosis, the general physician gives the necessary treatment (usually medication) to the patient or refers to a specialty department for further treatment.</p>
+											<div class="list-unstyled">
+												<h3>Treatments and Procedures</h3>
+												<p>The department of general medicine provides treatment for the following:</p>
+												<ul>
+													<li> All types of fevers</li>
+													<li> Infections affecting different organs of the body</li>
+													<li> All metabolic diseases and endocrine diseases such as diabetes, thyroid, cholesterol, obesity.</li>
+													<li> Respiratory diseases like asthma, allergies, lung infection, cough, sinusitis, pneumonia & TB</li>
+												</ul>
+											</div>
+	              		</div>
+	              	</div>
+	              </div>
+                </p>
+
+                <p id="surg">
+                <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
+	              	<div class="row departments">
+	              		<div class="col-lg-4 order-lg-last d-flex align-items-stretch">
+	              			<div class="img d-flex align-self-stretch" style="background-image: url(../static/images/dept-2.jpg);"></div>
+	              		</div>
+	              		<div class="col-md-8">
+	              			<h2>General Surgery</h2>
+											<p>General surgery is a specialty dealing with pre-operative, operative and post-operative management of surgical problems of all kinds; especially those relating to the abdomen, alimentary canal, soft tissues, endocrine system and, in many cases, the head and the neck. Patients who are critically ill or gravely injured are first brought to this department so that they can be stabilized before the next step of treatment.</p> 
+											<p>At AA Healthcare, we have a highly experienced team of general surgeons who excel in such critical situations. The doctors are specially trained to conduct emergency surgeries to contain excessive bleeding, bowel obstructions, organ perforations, burns and abdominal trauma. Other than emergencies, they also routinely carry out operations for complications such as appendicitis, hernia, gallbladder removal, thyroid and removal of tumors.</p>
+	              		</div>
+	              	</div>
+	              </div>
+                </p>
+                <p id="dent">
+								<div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
+	              	<div class="row departments">
+	              		<div class="col-lg-4 order-lg-last d-flex align-items-stretch">
+	              			<div class="img d-flex align-self-stretch" style="background-image: url(../static/images/dept-3.jpg);"></div>
+	              		</div>
+	              		<div class="col-md-8">
+	              			<h2>Dentistry</h2>
+											<p>We provide a comprehensive range of dental care right from full mouth digital X-rays, root canal treatment, cosmetic dentistry to fixed tooth implants and many other latest procedures by top dentists in India. The orthodontic department is hugely popular and a wide range of patients from India and abroad come here for correction of their dental irregularities. At the department, utmost importance is given to hygiene. To this end, there is a constant advancement of services to ensure that the latest treatments in the department of dental care are available to you.</p>
+											<p>At the department, we have vastly experienced dentists of Bangalore along with surgeons to make sure that you receive the least painful treatment and are determined to put the smile back on your face.</p>
+											
+											<div class="list-unstyled">
+														<h3>Treatments and Procedures</h3>
+														<p>The department of dentistry provides treatment for the following:</p>
+														<ul>
+															<li> Orthodontics – Correction of irregular teeth</li>
+															<li> Aesthetic and Cosmetic Dentistry</li>
+															<li>  Root Canal Treatment</li>
+															<li>  Dental Implantology</li>
+														</ul>
+											</div>
+											
+	              		</div>
+	              	</div>
+	              </div>
+                </p>
+                <p id="orth">
+                <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-day-4-tab">
+	              	<div class="row departments">
+	              		<div class="col-lg-4 order-lg-last d-flex align-items-stretch">
+	              			<div class="img d-flex align-self-stretch" style="background-image: url(../static/images/dept-4.jpg);"></div>
+	              		</div>
+	              		<div class="col-md-8">
+	              			<h2>Orthopaedics</h2>
+	              			<p>The Orthopedic Department offers comprehensive solutions for the full spectrum of acute and chronic musculoskeletal disorders including Trauma & Accident Surgery, Sports Medicine & Arthroscopy, Joint Replacements, Limb Deformity Correction reconstruction Ortho oncology, Hand & wrist, and Paediatric Ortho services.</p>
+											<div class="list-unstyled">
+													<h3>Treatments and Procedures</h3>
+													<p>The Orthopaedics Department offers an all-inclusive list of treatment and services for the following areas of bone and joint health:</p>
+													<ul>
+														<li>General Orthopaedics</li>
+														<li>Joint Replacement Surgeries</li>
+														<li>Shoulder</li>
+														<li>Total Hip Replacement</li>
+													</ul>
+											</div>
+	              		</div>
+	              	</div>
+                </div>
+                </p>
+                <p id="card">
+	              <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-day-5-tab">
+	              	<div class="row departments">
+	              		<div class="col-lg-4 order-lg-last d-flex align-items-stretch">
+	              			<div class="img d-flex align-self-stretch" style="background-image: url(../static/images/dept-5.jpg);"></div>
+	              		</div>
+	              		<div class="col-md-8">
+	              			<h2>Cardiology Deparments</h2>
+	              			<p>The Department of Cardiology of AA Healthcare deals with complete medical diagnosis and appropriate interventions, including conservative and Interventional Cardiology procedures and surgical treatment. AA Healthcare include specialized experts trained in congenital heart disease in adults and children, hypertrophic cardiomyopathy, heart valve disease, coronary artery disease, and heart rhythm disorders. </p>
+											<div class="list-unstyled">
+													<h3>Treatments and Procedures</h3>
+													<p>INTERVENTIONAL PROCEDURES:</p>
+													<ul>
+														<li>Radical and Femoral Angioplasty</li>
+														<li>Emergency Percutaneous Coronary Intervention (PCI)</li>
+														<li>Electrophysiological Radio Ablation</li>
+														<li>Pacemaker Implantation</li>
+													</ul>
+											</div>
+													
+	              		</div>
+	              	</div>
+                </div>
+                </p>
+	            </div>
+	          </div>
+	        </div>
+        </div>
+    	</div>
+		</section>
+		</p>
+		
+		
+		<p id="test">
+    <section class="ftco-section testimony-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+          	<span class="subheading">Testimonials</span>
+            <h2 class="mb-4">Our Patients Says About Us</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate justify-content-center">
+          <div class="col-md-8">
+            <div class="carousel-testimony owl-carousel">
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img mr-4" style="background-image: url(../static/images/person_1.jpg)">
+                  </div>
+                  <div class="text ml-2 bg-light">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                    <p>“We as a family will forever be grateful for the memories you helped create, for the strength and fortitude you provided, and for the commitment and dedication to our father and his treatment. Thank you so much for making such an enormous difference in his life and in each of ours.” </p>
+                    <p class="name">Racky Henderson</p>
+                    <span class="position">Farmer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img mr-4" style="background-image: url(../static/images/person_2.jpg)">
+                  </div>
+                  <div class="text ml-2 bg-light">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                    <p>“The collegial atmosphere was apparent, the collaborative environment was infectious, and the team as a whole was genuinely interested and concerned for my recovery. In a word, simply stated, they were awesome.”</p>
+                    <p class="name">Henry Dee</p>
+                    <span class="position">Businessman</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img mr-4" style="background-image: url(../static/images/person_4.jpg)">
+                  </div>
+                  <div class="text ml-2 bg-light">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                    <p>“I just can’t thank enough each and every one of the staff for all of their dedication. I was very impressed with the dignity and respect with which the nursing staff treated me during my stay. ”</p>
+                    <p class="name">Rodel Golez</p>
+                    <span class="position">Student</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+		</p>
+    {%endblock%}

@@ -1,0 +1,30 @@
+{ 
+    "_id" : ObjectId("5dda1e54a486092f0995c423"), 
+    "DOC_ID" : "D6", 
+    "PAT_ID" : "P1"
+}
+{ 
+    "_id" : ObjectId("5dda1e54a486092f0995c424"), 
+    "DOC_ID" : "D5", 
+    "PAT_ID" : "P2"
+}
+{ 
+    "_id" : ObjectId("5dda1e54a486092f0995c425"), 
+    "DOC_ID" : "D0", 
+    "PAT_ID" : "P1"
+}
+{ 
+    "_id" : ObjectId("5dda1e54a486092f0995c426"), 
+    "DOC_ID" : "D1", 
+    "PAT_ID" : "P1"
+}
+{ 
+    "_id" : ObjectId("5dda1e54a486092f0995c427"), 
+    "DOC_ID" : "D4", 
+    "PAT_ID" : "P1"
+}
+{ 
+    "_id" : ObjectId("5dda1e54a486092f0995c428"), 
+    "DOC_ID" : "D0", 
+    "PAT_ID" : "P5"
+}

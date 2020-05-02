@@ -1,0 +1,25 @@
+{%extends "base.html"%}
+{%block body%}
+<div class="form">  
+    <div class="container" style="width: min-content">
+        <br>
+    <h2 style="text-align:center", style="font-family: sans-serif">Enter Bill details</h2>
+    <br>
+    <br>
+    <form action="/bill" method="POST">
+        <h6 style="text-align:left" >Patient ID</h6>
+        <center><input type="text" name="pat_id" id="pat_id" required></center>
+        <h6 style="text-align:left" >Doctor ID</h6>
+        <center><input type="text" name="doc_id" id="doc_id" required></center>
+        <h6 style="text-align:left" >Consultation Fee</h6>
+        <center><input type="text" name="consultfee" id="consultfee" required></center>
+        <h6 style="text-align:left" >Extra Fee</h6>
+       <center><input type="text" name="extra" id ="extra"></center><br>
+              
+       <center><input type="submit" value="Add Bill" style="background-position: center" ></center> 
+       <br>
+       <br>
+    </form>
+    </div>
+</div>
+{%endblock%}

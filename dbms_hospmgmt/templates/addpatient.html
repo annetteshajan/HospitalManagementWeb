@@ -1,0 +1,50 @@
+{%extends "base.html"%}
+{%block body%}
+
+<div class="form">  
+    <div class="container" style="width: min-content">
+        <br>
+    <h2 style="text-align:center", style="font-family: sans-serif">Enter Patient details</h2>
+    <br>
+    <br>
+    <form action="/addpatient" method="POST">
+        <h6 style="text-align:left" >Username</h6>
+        <center><input type="text" name="uname" id="uname" required value={{item[10]}}  ></center>
+        <h6 style="text-align:left" >Password</h6>
+        <center><input type="password" name="password" id="password" required value={{item[11]}} ></center>
+        
+        <h6 style="text-align:left" >Name</h6>
+        <center><input type="text" name="FN" id="FN" placeholder="First" required value={{item[1]}}></center>
+       <br>
+       <center><input type="text" name="LN" id="LN" placeholder="Last" value={{item[2]}}></center>
+       Email:
+       <center><input type="text" name="email" id ="email" placeholder="name@email.com" required value={{item[3]}}></center>
+       DOB:
+       <center><input type="date" name="dob" id ="dob" required value={{item[6]}}></center>
+       Sex:
+       <center><input type="radio" name="gender" value="male" id ='m' checked style="width: 30px;" ><h7 style="line-height: normal">Male</h7>
+        <input type="radio" name="gender" value="female" id='f' style="width: 30px" > Female
+        <input type="radio" name="gender" value="other" id='o' style="width: 30px"> Other</center>
+    <br>
+    <h6 style="text-align:left" >Height</h6>
+        <center><input type="text" name="height" id="height" placeholder="centimetres" required value={{item[4]}}></center>
+        <h6 style="text-align:left" >Weight</h6>
+        <center><input type="text" name="weight" id="weight" placeholder="kilograms" required value={{item[5]}}></center>
+        <h6 style="text-align:left" >Blood Pressure</h6>
+        <center><input type="text" name="BP" id="BP" placeholder="/" value={{item[13]}}></center>
+        <h6 style="text-align:left" >Phone Number</h6>
+        <center><input type="text" name="Phone"  id="Phone" required value={{item[8]}}></center>
+        <h6 style="text-align:left" >Emergency Contact</h6>
+        <center><input type="text" name="emerg" id="emerg" value={{item[14]}}  ></center>
+        <h6 style="text-align:left" >Any allergies</h6>
+        <center><input type="text" name="hist" id="hist" value={{item[7]}} ></center>
+        <h6 style="text-align:left" >Address</h6>
+        <center><input type="text" name="address" id="address" value={{item[9]}}  ></center>
+        <br>
+       <center><input type="submit" value="Add Patient" style="background-position: center" ></center> 
+       <br>
+       <br>
+    </form>
+    </div>
+</div>
+{%endblock%}

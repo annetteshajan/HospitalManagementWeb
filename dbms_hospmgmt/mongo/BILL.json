@@ -1,0 +1,16 @@
+{ 
+    "_id" : "B0", 
+    "BILL_ID" : "B0", 
+    "PATIENT_ID" : "P1", 
+    "DOCTOR_ID" : "D6", 
+    "CONSULTFEE" : 500.0, 
+    "EXTRA" : 200.0
+}
+{ 
+    "_id" : "B1", 
+    "BILL_ID" : "B1", 
+    "PATIENT_ID" : "P2", 
+    "DOCTOR_ID" : "D5", 
+    "CONSULTFEE" : 1000.0, 
+    "EXTRA" : 300.0
+}

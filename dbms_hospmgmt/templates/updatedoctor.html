@@ -1,0 +1,26 @@
+{%extends "base.html"%}
+{%block body%}
+        <form action="/updatedoctor" method="POST">
+            <div class="login">
+                <div class="login-screen">
+                    <div class="app-title">
+                        <h1>Update Doctor</h1>
+                    </div>
+                    <div class="login-form">
+                        <div class="control-group">
+                            <h3 style="text-align: center">Enter Doctor ID</h3>
+                            <input type="text" class="login-field" value="" placeholder="doctor id" name="doctor_id" >
+                            <label class="login-field-icon fui-user" for="login-name"></label>
+                        </div>
+                        <div class="control-group">
+                                                      
+                    
+                            <input type="submit" value="Update" class="btn btn-primary btn-large btn-block">
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+{%endblock%}

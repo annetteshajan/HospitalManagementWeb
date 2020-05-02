@@ -1,0 +1,9 @@
+{ 
+    "_id" : NumberInt(5), 
+    "ROOM_NO" : NumberInt(5), 
+    "PATIENT_ID" : "P1", 
+    "ADMITDATE" : ISODate("2019-10-06T18:30:00.000+0000"), 
+    "DISCHARGE" : ISODate("2019-10-09T18:30:00.000+0000"), 
+    "DOC_ID" : "D6", 
+    "STAFF_ID" : "S3"
+}
